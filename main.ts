@@ -6,6 +6,7 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (hero_sprite2, co
     coin_sprite.destroy(effects.spray, 100)
     if (info.score() >= 33) {
         game.over(true, effects.confetti)
+        music.play(music.stringPlayable("B - B C5 - B C5 - ", 300), music.PlaybackMode.UntilDone)
     }
 })
 // =============================
